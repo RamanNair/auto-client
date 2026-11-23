@@ -1,0 +1,1 @@
+import {vehicles} from '$lib/vehicles.js';export function load({params}){return {vehicle:vehicles.find(v=>v.slug===params.slug)??null};}

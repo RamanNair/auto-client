@@ -1,56 +1,39 @@
-# sv
+# J & V Elite Motors — SvelteKit
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Responsive dealership website recreation based on the publicly visible content and structure of https://elitemotors.com.au/.
 
-## Creating a project
+## Stack
+- SvelteKit 2 + Svelte 5 runes
+- JavaScript only (no TypeScript)
+- Tailwind CSS v4 + daisyUI v5
+- Vite
 
-If you're seeing this, you've probably already done this step. Congrats!
+All UI styling is written with Tailwind utility classes and daisyUI components. No Bootstrap, Bulma, custom component framework, or separate CSS framework is included. `src/app.css` only loads Tailwind and configures the daisyUI theme.
 
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@1.7.0 create --template minimal --no-types --add prettier tailwindcss="plugins:typography,forms" --install npm auto-client
-```
-
-## Adding features
-
-Add features to your project with `sv add`:
-
-```sh
-npx sv add
-```
-
-For example, to add Tailwind CSS:
-
-```sh
-npx sv add tailwindcss
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+## Start
+```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
+Open http://localhost:5173
 
-## Building
-
-To create a production version of your app:
-
-```sh
+## Production build
+```bash
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Routes
+- `/` Home
+- `/cars` Inventory search (make, model, max price and sorting)
+- `/cars/[slug]` Vehicle details
+- `/finance` Finance information
+- `/contact` Enquiry form
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Inventory
+Edit `src/lib/vehicles.js`. Stock is demonstration content based on visible listings on the reference website. Verify prices, kilometres, vehicle details and availability before publishing.
+
+## Before going live
+Replace demo photography with licensed dealership photos; connect contact form to a backend API/email provider; connect vehicle stock to MySQL or a dealer stock feed; add secure admin authentication and stock management; configure domain, HTTPS, backups, analytics and privacy notices.
+
+Independent recreation, not the original source code. No private CMS, original backend or stock feed is included. Use third-party branding and photography only with permission.
