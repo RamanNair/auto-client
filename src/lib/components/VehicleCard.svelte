@@ -12,7 +12,8 @@
       alt={vehicle.title}
       class="h-full w-full object-cover"
       loading="lazy"
-    /><span class="badge badge-primary absolute left-3 top-3">Available</span>
+    />
+    <!-- <span class="badge badge-primary absolute left-3 top-3">Available</span> -->
   </figure>
   <div class="card-body gap-3 p-5">
     <h3 class="card-title text-base leading-snug">{vehicle.title}</h3>
