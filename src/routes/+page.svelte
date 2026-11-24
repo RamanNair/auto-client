@@ -11,12 +11,38 @@
   }
 </script>
 
-<svelte:head
+<!-- <svelte:head
   ><title>Used Cars Dandenong | KM MOTOR TRADERS</title><meta
     name="description"
     content="Browse quality inspected used cars at KM MOTOR TRADERS in Dandenong."
   /></svelte:head
->
+> -->
+
+<svelte:head>
+  <title>KM Motors | Used Cars Melbourne</title>
+
+  <meta
+    name="description"
+    content="KM Motors – Browse quality used cars for sale in Melbourne. Find your next car with KM Motors."
+  />
+
+  <meta property="og:site_name" content="KM Motors" />
+
+  <meta property="og:title" content="KM Motors | Used Cars Melbourne" />
+
+  <meta name="robots" content="index, follow" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "KM Motors",
+      "alternateName": ["KM Motors Melbourne", "K M Motors"],
+      "url": "https://auto-client-sigma.vercel.app/"
+    }
+  </script>
+</svelte:head>
+
 <section
   class="relative isolate overflow-hidden bg-neutral text-neutral-content"
 >
