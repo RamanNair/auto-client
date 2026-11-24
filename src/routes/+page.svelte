@@ -37,7 +37,7 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "KM Motors",
-      "alternateName": ["KM Motors Melbourne", "K M Motors"],
+      "alternateName": ["KM Motor", "KM Motors"],
       "url": "https://auto-client-sigma.vercel.app/"
     }
   </script>
