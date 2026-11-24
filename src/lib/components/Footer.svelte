@@ -42,6 +42,6 @@
   <div
     class="border-t border-white/10 px-4 py-5 text-center text-xs text-neutral-content/50"
   >
-    © 2026 KM MOTOR TRADERS
+    © 2026 KM MOTOR TRADERS - Karim Mehrabi
   </div>
 </footer>
